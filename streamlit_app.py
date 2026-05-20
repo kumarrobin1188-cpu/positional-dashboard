@@ -154,10 +154,10 @@ def card(label, value, cls="neutral"):
 
 # ── Column config helpers (no Styler, no formatting bugs) ─────────────────────
 
-INR0 = st.column_config.NumberColumn(format="₹%,.0f")
-INR2 = st.column_config.NumberColumn(format="₹%.2f")
-NUM1 = st.column_config.NumberColumn(format="%.1f")
-NUM0 = st.column_config.NumberColumn(format="%.0f")
+INR0 = st.column_config.NumberColumn()
+INR2 = st.column_config.NumberColumn()
+NUM1 = st.column_config.NumberColumn()
+NUM0 = st.column_config.NumberColumn()
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
