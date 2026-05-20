@@ -279,7 +279,7 @@ def main():
             styled = (
                 positions[display_cols]
                 .style
-                .applymap(style_m2m, subset=["Open M2M (₹)", "Total P&L (₹)"])
+                .map(style_m2m, subset=["Open M2M (₹)", "Total P&L (₹)"])
                 .format({
                     "Avg Price": "₹{:.2f}",
                     "LTP":       "₹{:.2f}",
@@ -331,7 +331,7 @@ def main():
             styled_cl = (
                 view[display_cols]
                 .style
-                .applymap(style_realized, subset=["Realized P&L (₹)"])
+                .map(style_realized, subset=["Realized P&L (₹)"])
                 .format({"Avg Buy": "₹{:.2f}", "Avg Sell": "₹{:.2f}",
                          "Realized P&L (₹)": "₹{:,.0f}", "Strike": "{:.0f}"})
             )
